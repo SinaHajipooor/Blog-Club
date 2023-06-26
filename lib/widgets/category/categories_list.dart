@@ -17,6 +17,7 @@ class CategoriesList extends StatelessWidget {
         aspectRatio: 1.2,
         initialPage: 0,
         disableCenter: true,
+        scrollPhysics: const BouncingScrollPhysics(),
         enableInfiniteScroll: false,
         enlargeCenterPage: true,
         enlargeStrategy: CenterPageEnlargeStrategy.height,
