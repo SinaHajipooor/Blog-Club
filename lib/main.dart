@@ -22,12 +22,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         textTheme: TextTheme(
           titleMedium: TextStyle(fontFamily: defaultFontFamily, color: secondaryTextColor, fontSize: 14),
-          titleLarge: TextStyle(
-            fontFamily: defaultFontFamily,
-            fontWeight: FontWeight.bold,
-            color: primaryTextColor,
-          ),
+          titleLarge: TextStyle(fontFamily: defaultFontFamily, fontWeight: FontWeight.bold, color: primaryTextColor, fontSize: 18),
           bodyMedium: TextStyle(fontFamily: defaultFontFamily, fontSize: 12, color: secondaryTextColor),
+          headlineMedium: TextStyle(fontFamily: defaultFontFamily, fontSize: 24, color: primaryTextColor, fontWeight: FontWeight.bold),
         ),
       ),
       home: const HomeScreen(),
