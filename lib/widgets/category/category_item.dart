@@ -49,7 +49,14 @@ class CategoryItem extends StatelessWidget {
             ),
           ),
         ),
-        Positioned(bottom: 48, left: 42, child: Text(category.title, style: Theme.of(context).textTheme.titleLarge!.apply(color: Colors.white))),
+        Positioned(
+          bottom: 48,
+          left: 42,
+          child: Text(
+            category.title,
+            style: Theme.of(context).textTheme.titleLarge!.apply(color: Colors.white),
+          ),
+        ),
       ],
     );
   }
