@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           child: Column(
             children: [
               HomeAppBar(),
@@ -19,6 +20,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 16),
               CategoriesList(),
               PostsList(),
+              SizedBox(height: 32),
             ],
           ),
         ),

@@ -26,7 +26,7 @@ class PostItemIcons extends StatelessWidget {
           child: Container(
             alignment: Alignment.centerRight,
             child: Icon(
-              CupertinoIcons.bookmark,
+              post.isBookmarked ? CupertinoIcons.bookmark_fill : CupertinoIcons.bookmark,
               size: 16,
               color: themeData.textTheme.bodyMedium!.color,
             ),

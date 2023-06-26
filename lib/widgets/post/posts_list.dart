@@ -11,6 +11,7 @@ class PostsList extends StatelessWidget {
       itemExtent: 141,
       shrinkWrap: true,
       itemCount: posts.length,
+      physics: const ClampingScrollPhysics(),
       itemBuilder: (context, index) {
         final post = posts[index];
         return PostItem(post: post);
