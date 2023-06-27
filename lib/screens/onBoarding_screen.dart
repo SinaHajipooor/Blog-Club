@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sevenlearn/data/data.dart';
 import 'package:sevenlearn/gen/assets.gen.dart';
-import 'package:sevenlearn/screens/root_screen.dart';
+import 'package:sevenlearn/screens/auth_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatefulWidget {
@@ -31,7 +31,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
   void _changePageHandler() {
     if (_pageNumber == onBoardingItems.length - 1) {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const RootScreen()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const AuthScreen()));
     } else {
       _pageController.animateToPage(_pageNumber + 1, duration: const Duration(milliseconds: 500), curve: Curves.decelerate);
     }
