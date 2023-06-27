@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sevenlearn/navigation/bottom_tabs.dart';
-import 'package:sevenlearn/screens/home_screen.dart';
 import 'package:sevenlearn/screens/splash_screen.dart';
 
 void main() {
@@ -43,12 +41,6 @@ class MyApp extends StatelessWidget {
         ),
         textTheme: TextTheme(titleMedium: TextStyle(fontFamily: defaultFontFamily, color: secondaryTextColor, fontSize: 14), titleLarge: TextStyle(fontFamily: defaultFontFamily, fontWeight: FontWeight.bold, color: primaryTextColor, fontSize: 18), bodyMedium: TextStyle(fontFamily: defaultFontFamily, fontSize: 12, color: secondaryTextColor), headlineMedium: TextStyle(fontFamily: defaultFontFamily, fontSize: 24, color: primaryTextColor, fontWeight: FontWeight.bold), headlineSmall: TextStyle(fontFamily: defaultFontFamily, fontSize: 20, color: primaryTextColor, fontWeight: FontWeight.bold)),
       ),
-      // home: const Stack(
-      //   children: [
-      //     Positioned.fill(child: HomeScreen()),
-      //     Positioned(bottom: 0, right: 0, left: 0, child: BottomTabs()),
-      //   ],
-      // ),
       home: const SplashScreen(),
     );
   }
