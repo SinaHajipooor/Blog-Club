@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sevenlearn/data/data.dart';
 import 'package:sevenlearn/main.dart';
+import 'package:sevenlearn/widgets/post/post_item_icons.dart';
 
 class PostItem extends StatelessWidget {
   final PostData post;
@@ -51,6 +52,7 @@ class PostItem extends StatelessWidget {
                   const SizedBox(width: 8),
                   Text(post.title, style: themeData.textTheme.bodySmall),
                   const SizedBox(height: 16),
+                  PostItemIcons(post: post),
                 ],
               ),
             ),
