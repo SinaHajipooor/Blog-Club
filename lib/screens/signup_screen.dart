@@ -47,8 +47,9 @@ class SignupScreen extends StatelessWidget {
                 shape: MaterialStateProperty.all(
                   RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                 ),
+                backgroundColor: MaterialStateProperty.all(Colors.blue),
               ),
-              child: const Text('SIGN UP'),
+              child: const Text('SIGN UP', style: TextStyle(color: Colors.white)),
             ),
             const SizedBox(height: 15),
             const Center(
