@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sevenlearn/gen/assets.gen.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({super.key});
@@ -16,7 +17,7 @@ class HomeAppBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text('Hi Sina', style: themeData.textTheme.titleMedium),
-              Image.asset('assets/img/icons/notification.png', width: 24, height: 24),
+              Assets.img.icons.notification.image(width: 24, height: 24),
             ],
           ),
         ),
