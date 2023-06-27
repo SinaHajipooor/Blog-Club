@@ -19,13 +19,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final primaryTextColor = Color(0xff0D253C);
-    final secondaryTextColor = Color(0xff2D4379);
-
+    const primaryTextColor = Color(0xff0D253C);
+    const secondaryTextColor = Color(0xff2D4379);
+    const primaryColor = Color(0xff376AED);
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: const ColorScheme.light(
+          primary: primaryColor,
+          onPrimary: Colors.white,
+          onSurface: primaryTextColor,
+          onBackground: primaryTextColor,
+          background: Color(0xffFBFCFF),
+          surface: Colors.white,
+        ),
         useMaterial3: true,
         primarySwatch: Colors.blue,
         textButtonTheme: TextButtonThemeData(
@@ -39,7 +46,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        textTheme: TextTheme(titleMedium: TextStyle(fontFamily: defaultFontFamily, color: secondaryTextColor, fontSize: 14), titleLarge: TextStyle(fontFamily: defaultFontFamily, fontWeight: FontWeight.bold, color: primaryTextColor, fontSize: 18), bodyMedium: TextStyle(fontFamily: defaultFontFamily, fontSize: 12, color: secondaryTextColor), headlineMedium: TextStyle(fontFamily: defaultFontFamily, fontSize: 24, color: primaryTextColor, fontWeight: FontWeight.bold), headlineSmall: TextStyle(fontFamily: defaultFontFamily, fontSize: 20, color: primaryTextColor, fontWeight: FontWeight.bold)),
+        textTheme: const TextTheme(titleMedium: TextStyle(fontFamily: defaultFontFamily, color: secondaryTextColor, fontSize: 14), titleLarge: TextStyle(fontFamily: defaultFontFamily, fontWeight: FontWeight.bold, color: primaryTextColor, fontSize: 18), bodyMedium: TextStyle(fontFamily: defaultFontFamily, fontSize: 12, color: secondaryTextColor), headlineMedium: TextStyle(fontFamily: defaultFontFamily, fontSize: 24, color: primaryTextColor, fontWeight: FontWeight.bold), headlineSmall: TextStyle(fontFamily: defaultFontFamily, fontSize: 20, color: primaryTextColor, fontWeight: FontWeight.bold)),
       ),
       home: const SplashScreen(),
     );

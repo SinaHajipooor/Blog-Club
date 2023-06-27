@@ -64,4 +64,21 @@ class AppDatabase {
       PostData(id: 2, title: 'Step design sprint for UX beginner', caption: 'Ux Design', isBookmarked: true, likes: '2k', time: '41hr ago', imageFileName: 'small_post_3.jpg'),
     ];
   }
+
+  static List<OnBoardingItem> get onBoardingItems {
+    List<OnBoardingItem> items = [];
+    for (var i = 0; i < 4; i++) {
+      items.add(
+        OnBoardingItem(title: 'Read the article you want instantly', description: 'description descriptiondescription descriptiondescriptiondescriptiondescription description'),
+      );
+    }
+    return items;
+  }
+}
+
+class OnBoardingItem {
+  final String title;
+  final String description;
+
+  OnBoardingItem({required this.title, required this.description});
 }
