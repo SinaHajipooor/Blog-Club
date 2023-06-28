@@ -14,27 +14,13 @@ class SignupScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Welcome to Blog Club',
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.w900),
-            ),
+            const Text('Welcome to Blog Club', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w900)),
             const SizedBox(height: 8),
-            Text(
-              'Please Enter your information',
-              style: themeData.textTheme.titleMedium,
-            ),
+            Text('Please Enter your information', style: themeData.textTheme.titleMedium),
             const SizedBox(height: 16),
-            const TextField(
-              decoration: InputDecoration(
-                label: Text('Fullname'),
-              ),
-            ),
+            const TextField(decoration: InputDecoration(label: Text('Fullname'))),
             const SizedBox(height: 16),
-            const TextField(
-              decoration: InputDecoration(
-                label: Text('username'),
-              ),
-            ),
+            const TextField(decoration: InputDecoration(label: Text('username'))),
             const SizedBox(height: 20),
             const PasswordTextFeild(),
             const SizedBox(height: 40),
@@ -52,12 +38,7 @@ class SignupScreen extends StatelessWidget {
               child: const Text('SIGN UP', style: TextStyle(color: Colors.white)),
             ),
             const SizedBox(height: 15),
-            const Center(
-              child: Text(
-                'You are sign up with',
-                style: TextStyle(letterSpacing: 2),
-              ),
-            ),
+            const Center(child: Text('You are sign up with', style: TextStyle(letterSpacing: 2))),
             const SizedBox(height: 16),
             const AuthIcons(),
           ],
