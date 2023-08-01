@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sevenlearn/navigation/bottom_tabs.dart';
-import 'package:sevenlearn/screens/home_screen.dart';
+import 'package:sevenlearn/screens/root/home_screen.dart';
 
 class RootScreen extends StatelessWidget {
   const RootScreen({super.key});

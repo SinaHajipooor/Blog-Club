@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sevenlearn/data/data.dart';
 import 'package:sevenlearn/gen/assets.gen.dart';
-import 'package:sevenlearn/screens/auth_screen.dart';
+import 'package:sevenlearn/screens/auth/auth_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatefulWidget {

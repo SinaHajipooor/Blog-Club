@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sevenlearn/gen/assets.gen.dart';
-import 'package:sevenlearn/screens/login_screen.dart';
-import 'package:sevenlearn/screens/signup_screen.dart';
+import 'package:sevenlearn/screens/auth/login_screen.dart';
+import 'package:sevenlearn/screens/auth/signup_screen.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
